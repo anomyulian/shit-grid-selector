@@ -68,6 +68,10 @@ html{
   border-radius: 10px;
 }
 
+.grid-col:hover {
+  border-color: #555;
+}
+
 .grid-selected {
   border-color: #444; 
 }
