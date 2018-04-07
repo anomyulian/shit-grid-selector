@@ -1,0 +1,78 @@
+/* COLORS */
+
+/* FONT */
+
+/* CONFIG */
+html{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #bbb;
+	color: #999;
+  user-select: none;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.one, .one-third, .two-thirds, .one-fourth, .half {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+}
+
+
+/* STYLE */
+
+
+.grid-container {
+  display: flex;
+  flex-direction: column; 
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-col {
+  border: 2px #888 solid;
+  height: 50px;
+  width: 50px;
+  background-color: #888;
+  margin: 4px;
+  border-radius: 10px;
+}
+
+.grid-selected {
+  border-color: #444; 
+}
+
+.result-row {
+  color: #333;
+  margin-top: 8px;
+}
